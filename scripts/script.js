@@ -20,7 +20,7 @@ let winningText = new Array(
   "Damn it !...YOU WIN !",
   "Winner, Winner, Winner !!!",
   "Kabooommmm !!! you win !!");
-let matchButton = Math.floor(Math.random() * 4);
+let matchButton = Math.floor(Math.random() * 3);
 function isWinner(buttonNr) {
     let randomText =  Math.floor(Math.random() * loosingText.length);
     if (matchButton == buttonNr) {
@@ -30,5 +30,5 @@ function isWinner(buttonNr) {
       document.getElementById("result").innerHTML = loosingText[randomText];
       document.getElementById("result").style = "color: #C04000";
     }
-    matchButton = Math.floor(Math.random() * 4);
+    matchButton = Math.floor(Math.random() * 3);
 }
