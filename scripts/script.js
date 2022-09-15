@@ -22,13 +22,13 @@ let winningText = new Array(
   "Kabooommmm !!! you win !!");
 
 function isWinner(buttonNr) {
-    let matchButton = Math.floor(Math.random() * 3);
-    let randomText =  Math.floor(Math.random() * loosingText.length);
-    if (matchButton == buttonNr) {
-      document.getElementById("result").innerHTML = winningText[randomText];
-      document.getElementById("result").style = "color: #2E8B57";
-    } else {
-      document.getElementById("result").innerHTML = loosingText[randomText];
-      document.getElementById("result").style = "color: #C04000";
-    }
+  let matchButton = Math.floor(Math.random() * 3);
+  let randomText =  Math.floor(Math.random() * loosingText.length);
+  if (matchButton == buttonNr) {
+    document.getElementById("result").innerHTML = winningText[randomText];
+    document.getElementById("result").style = "color: #2E8B57";
+  } else {
+    document.getElementById("result").innerHTML = loosingText[randomText];
+    document.getElementById("result").style = "color: #C04000";
+  }
 }
