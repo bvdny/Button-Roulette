@@ -20,9 +20,9 @@ let winningText = new Array(
   "Damn it !...YOU WIN !",
   "Winner, Winner, Winner !!!",
   "Kabooommmm !!! you win !!");
+let matchButton = Math.floor(Math.random() * 3);
 
 function isWinner(buttonNr) {
-  let matchButton = Math.floor(Math.random() * 3);
   let randomText =  Math.floor(Math.random() * loosingText.length);
   if (matchButton == buttonNr) {
     document.getElementById("result").innerHTML = winningText[randomText];
